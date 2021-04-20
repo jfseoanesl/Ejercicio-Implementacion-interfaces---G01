@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Calculadora">
+  <ClassDiagramComponents>
+    <Interface name="IOperacion" package="" visibility="public" xPosition="346.0" yPosition="29.0">
+      <Methods>
+        <Method name="Multiplicacion" returnType="int" visibility="public">
+          <Argument type="int" name="A"/>
+          <Argument type="int" name="B"/>
+        </Method>
+        <Method name="Division" returnType="int" visibility="public">
+          <Argument type="int" name="N"/>
+          <Argument type="int" name="D"/>
+        </Method>
+        <Method name="Potencia" returnType="int" visibility="public">
+          <Argument type="int" name="b"/>
+          <Argument type="int" name="e"/>
+        </Method>
+      </Methods>
+    </Interface>
+    <Class name="ImpManualCalculadora" package="" visibility="public" xPosition="221.0" yPosition="273.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="ImplAvanzadaCalculadora" package="" visibility="public" xPosition="493.0" yPosition="273.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ImplAvanzadaCalculadora" target="IOperacion"/>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="ImpManualCalculadora" target="IOperacion"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
